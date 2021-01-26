@@ -1,0 +1,242 @@
+*{
+	box-sizing: border-box;
+}
+
+img{
+	width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+}
+
+.Logo{
+	width: 85px;
+	height:  70px;
+
+}
+
+#Container{
+	padding: 2px 2px;
+	margin: 0px 2px;
+	width: 100%;
+	height: auto;
+}
+
+.Row-container{
+	height: 1230px;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+.Col-container{
+	height: 400px;
+	width: 285px;
+	margin: 15px auto;
+}
+
+.Picture{
+	height: 220px;
+	margin-bottom: 2px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.Info{
+	height: 90px;
+	margin: 1px 0 2px 8px;
+	padding: 7px 7px;
+	font-size: 20px;
+}
+
+.Btns{
+	padding: 8px 8px;
+	margin-top: 20px;
+	text-align: center;
+
+}
+
+.Btn{
+	color: white;
+	background-color: #45d5c0;
+	cursor: pointer;
+	padding: 2.5% 10%;
+	border-radius: 5px;
+	border:none;
+}
+
+#Single-item{
+	height: 420px;
+	width: 100%;
+}
+
+#Whole-container{
+	display: none;
+}
+
+.Popup-div{
+	display: flex;
+	width: 100%;
+	height: 65%;
+	position: fixed;
+	top:20%;
+}
+
+#Pic{
+	width: 45%;
+	height: 100%;
+	margin-left: 10%;
+}
+
+#Info-container{
+	width: 53%;
+	margin: 5px;
+}
+
+#Detail h1{
+	text-align: center;
+}
+
+#Detail{
+	height: 65%;
+	margin:6% 0 0 7%;
+}
+
+#PName, #PPrice, #PQuantity{
+	font-size: 1.8rem;
+	margin:2% 0 5% 5%;
+}
+
+#Close-btn{
+	width: 100%;
+	height: 30%;
+}
+
+.Clbtn{
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 2% 10%;
+	border-radius: 5px;
+	border:none;
+	background-color: #45d5c0;
+	color: white;
+	font-size: 20px;
+}
+
+.Stock{
+	display: none;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px){
+	.Popup-div{
+		display: flex;
+		flex-direction: column;	
+		height: 540px;
+		top:10%;
+	}
+
+	#Pic{
+		height: 62%;
+		width: 95%;
+		margin: 0 5px;
+	}
+
+	#Info-container{
+		height: 50%;
+		width: 95%;
+		margin: 0 5px; 	
+	}
+
+	#PName, #PPrice, #PQuantity{
+		font-size: 1.2rem;
+		margin-bottom: 5px;
+	}
+
+	#Detail h1{
+		font-size: 1.7rem;
+	}
+
+	.Clbtn{
+		margin-top: 6px;
+		padding: 8px 70px;
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 850px) and (max-width: 1300px){
+	.Row-container{
+		display: flex;
+		justify-content: space-around;
+		height: 420px;
+		margin-bottom: 30px;
+	}
+
+	.Btns{
+		padding: 6px 6px;
+		text-align: center;
+	}
+
+	.Btn{
+		cursor: pointer;
+		margin-left: 4px;
+		border-radius: 5px;
+		border:none;
+		padding: 2.5% 10%;
+	}
+
+	#item{
+		width: 30%;
+		margin: 0 auto;
+	}
+
+	.Info{
+		margin:2px 0 4px 15px;
+	}
+
+	#Pic{
+		margin-left: 8%;
+	}
+}
+
+@media screen and (min-width: 1320px) and (max-width: 1700px){
+	.Row-container{
+		display: flex;
+		justify-content: space-around;
+		height: 420px;
+		margin-bottom: 30px;
+	}
+
+	.Col-container{
+		width: 30%;
+	}
+
+	#item{
+		margin:0 auto;
+	}
+
+	.Info{
+		margin:2px 0 4px 35px;
+	}
+
+	#Whole-container{
+		margin:0 20px;
+	}
+
+	#Info-container{
+		margin-right: 9%;
+	}
+
+	.Btns{
+		text-align: center;
+	}
+
+	.Btn{
+		cursor: pointer;
+		padding: 2.5% auto;
+		border-radius: 5px;
+		border:none;
+	}
+}

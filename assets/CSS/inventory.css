@@ -1,0 +1,261 @@
+html {
+    font-size: 16px;
+}
+
+header,
+#Head-container {
+    width: 100%;
+    height: 610px;
+    margin-top: 1.5em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navi {
+    background-color: #232b2b;
+}
+
+#Head-container {
+    height: 100%;
+    margin-top: 0;
+    background-image: url('../Images/furniture1.jpg');
+    position: relative;
+    z-index: -1;
+    filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#head-text {
+    position: absolute;
+    top: 15%;
+    left: 8px;
+    z-index: 2;
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    width: 100%;
+    max-height: 60vw;
+    min-height: 10vw;
+    margin: 2em 0.2em;
+}
+
+#btn-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-head {
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.15em 0.15em;
+    border-radius: 7px;
+    margin: 0.5em 0.3em;
+    background: linear-gradient(#961d63, #337ab7);
+}
+
+
+/*Styling the form*/
+
+.Form {
+    display: none;
+    position: absolute;
+    top: 3%;
+    right: 0;
+    left: 0;
+    bottom: 8%;
+    margin-top: auto;
+    z-index: 9;
+    padding: 5px 5px;
+    height: 570px;
+}
+
+.Form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    height: 530px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.Form-container input[type=text],
+.Form-container input[type=password],
+.Form-container input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.Form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.Form-container .cancel {
+    background-color: red;
+}
+
+.Form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.Log-info {
+    height: 540px;
+    margin-bottom: 2px;
+}
+
+#Choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Choice .btn-ch {
+    margin-left: 2px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 3.5px solid black;
+    background-color: white;
+}
+
+.btn-nav {
+    padding: 8px 8px;
+    background-color: #232b2b;
+    border: none;
+    color: white;
+    margin: 2px 2px;
+}
+
+#Reg-form {
+    height: 550px;
+    top: 5%;
+    bottom: 9%;
+}
+
+#Register {
+    height: 545px;
+}
+
+#Register input[type=text],
+#Register input[type=password],
+#Register input[type=number] {
+    padding: 12px 15px;
+    margin: 5px 0 18px 0;
+}
+
+#Register .btn {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+}
+
+#Container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#About-us,
+#Contact {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 0 0.8em;
+    padding: 1.3px 1.3px;
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+    header {
+        height: 700px;
+    }
+    #head-text {
+        width: 70%;
+        font-size: 2.6em;
+    }
+    #Container {
+        width: 100%;
+        overflow: hidden;
+    }
+    #About-us,
+    #Contact {
+        font-size: 1.8rem;
+        margin: 0 0.8em;
+        padding: 1.3px 1.3px;
+    }
+    #head-text {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .btn-head {
+        font-size: 1.6rem;
+        padding: 0.2em 0.2em;
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1700px) {
+    header {
+        height: 720px;
+    }
+    #head-text {
+        width: 60%;
+        font-size: 2.8em;
+    }
+    #Container {
+        width: 100%;
+        overflow: hidden;
+    }
+    #About-us,
+    #Contact {
+        font-size: 1.8rem;
+        margin: 0 0.8em;
+        padding: 1.3px 1.3px;
+    }
+    .Form,
+    #Reg-form {
+        bottom: 15%;
+    }
+    #head-text {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .btn-head {
+        font-size: 1.6rem;
+        padding: 0.2em 0.2em;
+    }
+    .btn-nav {
+        padding: 10px 10px;
+        margin: 3px 3px;
+    }
+}

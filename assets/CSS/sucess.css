@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#Content h1 {
+    font-size: 2.7em;
+    text-align: center;
+}
+
+#Container {
+    margin: 5px 5px;
+}
+
+#Text-div {
+    width: 100%;
+    height: 300px;
+    background-color: #4169E1;
+}
+
+#Text {
+    font-size: 1.02rem;
+    font-family: Stylish_font;
+}
+
+#Info {
+    color: white;
+    margin: -20px 5px;
+}
+
+#Logo {
+    margin: 15px 0 0 15px;
+    height: 110px;
+    width: 70%;
+}
+
+#Content {
+    width: 100%;
+    margin: 10% 18% 0 0%;
+}
+
+#Order {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+#Btn {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding: 8px 8px;
+    margin-top: 40px;
+}
+
+#Done {
+    margin-bottom: 18px;
+    cursor: pointer;
+    padding: 3% 10%;
+    border-radius: 5px;
+    border: none;
+    background-color: #45d5c0;
+    color: white;
+}
+
+@media screen and (min-width:845px) and (max-width: 1200px) {
+    #Container {
+        display: flex;
+        justify-content: space-between;
+    }
+    #Text-div {
+        width: 70%;
+        height: 100vh;
+        margin-right: 10px;
+    }
+    #Info {
+        margin: 40% 20%;
+    }
+    #Logo {
+        height: 110px;
+        width: 80%;
+    }
+    #Content {
+        width: 70%;
+        margin: 5% 5% 0 8%;
+    }
+    #Btn {
+        margin-top: 50px;
+        width: 100%;
+        padding: 6px 6px;
+        text-align: center;
+    }
+    #Done {
+        margin-bottom: 18px;
+        cursor: pointer;
+        margin-left: 4px;
+        border-radius: 5px;
+        border: none;
+        padding: 2.5% auto;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    #Container {
+        display: flex;
+        justify-content: space-between;
+    }
+    #Text {
+        font-size: 1.1rem;
+    }
+    #Info {
+        margin: 40% 20%;
+    }
+    #Text-div {
+        width: 40%;
+        height: 100vh;
+        border: 1px solid black;
+        margin-right: 10px;
+    }
+    #Logo {
+        height: 110px;
+        width: 70%;
+    }
+    #Content {
+        width: 50%;
+        margin: 5% 5% 0 8%;
+    }
+    #Btn {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #Done {
+        cursor: pointer;
+        padding: 2% auto;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+h1,
+p {
+    font-family: Roboto;
+}
