@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Laevo, online furniture store, indian laevo" />
+    <link rel="icon" href="/Images/Logo_Laevo_small1.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="/CSS/Login.css">
+
+    <title>Laevo-Login</title>
+    <link rel="icon" href="/Images/Logo_Laevo_small1.png" type="image/icon type">
+    <!--WEB FONTS -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <% if (isAdded) { %>
+        <script>
+            alert("Incorrect Password")
+        </script>
+        <% } %>
+            <% if(typeof isAddedphno !== 'undefined') { %>
+                <% if (isAddedphno) { %>
+                    <script>
+                        alert("Phone Number doed not exist!")
+                    </script>
+                    <% } %>
+                        <% } %>
+
+                            <div id="Container">
+                                <div id="Text-div">
+                                    <div id="Logo-container">
+                                        <div id="Back-arrow">
+                                            <a href="/register" class="previous round">&larr;</a>
+                                        </div>
+                                        <div id="Logo">
+                                            <h1><img src="/Images/Logo_Laevo.png" alt="logo" height="80" width="126"></h1>
+                                        </div>
+                                    </div>
+                                    <div id="Info">
+                                        <h1>
+                                            <spam id="First-word">Login</spam> to your<br/> LAEVO account.</h1>
+                                        <p id="Text">Too many passwords?
+                                            <br/>You can now login with your verified mobile number.<br/><br/>Your one stop destination to all your furniture needs. Modern Sleek Minimalist furniture here.</p>
+                                    </div>
+                                </div>
+                                <div id="Form-div">
+                                    <div id="Form">
+                                        <form method="POST" ,action="/login" id="login">
+                                            <label for="email"></label>
+                                            <input type="tel" name="phone" placeholder="Phone Number">
+
+                                            <label for="password"></label>
+                                            <input type="password" name="password" placeholder="Password">
+                                        </form>
+                                    </div>
+                                    <div id="Btn">
+                                        <button type="submit" id="Btns" form="login" , value="submit">LOGIN</button>
+                                        <button type="submit" onclick="location.href='/register';" id="Log">DON'T HAVE A ACCOUNT?SIGN UP</button>
+                                    </div>
+                                </div>
+                            </div>
+</body>
+
+</html>

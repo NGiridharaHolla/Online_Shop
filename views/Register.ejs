@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Laevo, online furniture store, indian leavo" />
+
+    <link rel="stylesheet" type="text/css" href="/CSS/Register.css">
+
+    <title>Laevo-Register</title>
+    <link rel="icon" href="/Images/Logo_Laevo_small1.png" type="image/icon type">
+    <!--WEB FONTS -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="Container">
+        <div id="Text-div">
+            <div id="Logo-container">
+                <div id="Back-arrow">
+                    <a href="/" class="previous round">&larr;</a>
+                </div>
+                <div id="Logo">
+                    <h1><img src="/Images/Logo_Laevo.png" alt="logo" height="80" width="126"></h1>
+                </div>
+            </div>
+            <div id="Info">
+                <h1>
+                    <spam id="First-word">Register</spam> to your<br/> LAEVO account.</h1>
+                <p id="Text">New to Leavo?<br/>Register here to access our wide amd variegated minimalistic modern furniture.<br/><br/>Access your account later with your phone number.</p>
+            </div>
+        </div>
+        <div id="Form-div">
+            <div id="Form">
+                <form method="POST" , action="/register" , id="form_reg">
+                    <label for="Fname"></label>
+                    <input type="text" name="first" placeholder="First Name">
+
+                    <label for="text"></label>
+                    <input type="text" name="last" placeholder="Last name">
+
+                    <label for="text"></label>
+                    <input type="text" name="street" placeholder="Street">
+
+                    <label for="Phone_no"></label>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+
+                    <label for="password"></label>
+                    <input type="password" name="password" placeholder="Password">
+                </form>
+            </div>
+            <div id="Btn">
+                <button type="submit" id="Btns" form="form_reg" value="submit">REGISTER</button>
+                <button type="submit" onclick="location.href='/login';" id="Log">Have an Account? Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

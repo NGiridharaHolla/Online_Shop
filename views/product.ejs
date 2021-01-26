@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Inventory Management">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="icon" href="/Images/Logo_Laevo_small1.png" type="image/icon type">
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link href="/CSS/css_slider.css" type="text/css" rel="stylesheet" media="all">
+    <!-- banner slider -->
+    <link rel="stylesheet" href="/CSS/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link href="/CSS/font-awesome.min.css" rel="stylesheet">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="/CSS/Product.css">
+
+    <!--My javascript -->
+    <script type="text/javascript" src="/JS/Product.js"></script>
+    <title>Products</title>
+</head>
+
+<body onload="Check();">
+    <header id="Header">
+        <div class="container-fluid">
+            <div class="header d-md-flex align-items-center py-sm-3 py-2 px-sm-2 px-1">
+                <!-- logo -->
+                <div id="logo">
+                    <a href="/"><img src="/Images/Logo_Laevo.png" class="Logo" /></a>
+                </div>
+                <!-- //logo -->
+                <!-- nav -->
+                <div class="nav_w3ls ml-5">
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                </div>
+                </nav>
+                <!-- //nav -->
+            </div>
+        </div>
+    </header>
+
+    <div id="Container">
+        <div class="Row-container">
+            <div class="Col-container">
+                <div class="Picture" onclick="showPopup(this,0);"><img src="/Images/Pic0.jpg" alt="It is a table" /></div>
+                <div class="Info">
+                    <div id="Name0">Product Name:
+                        <%= inventory[0].product_name %>
+                    </div>
+                    <div id="Price0">Price:
+                        <%= inventory[0].price %>
+                    </div>
+                    <div id="Quantity0">Quantity:
+                        <%= inventory[0].quantity %>
+                    </div>
+                </div>
+                <div class="Btns" id="Btns0">
+                    <a href="/product/?productid= <%= inventory[0].product_key %> "><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!!Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+            <div class="Col-container">
+                <div class="Picture Image-fit" onclick="showPopup(this,1);"><img src="/Images/Pic1.jpg" alt="It is a shelving unit" /></div>
+                <div class="Info">
+                    <div id="Name1">Product Name:
+                        <%= inventory[1].product_name %>
+                    </div>
+                    <div id="Price1">Price:
+                        <%= inventory[1].price %>
+                    </div>
+                    <div id="Quantity1">Quantity:
+                        <%= inventory[1].quantity %>
+                    </div>
+                </div>
+                <div class="Btns" id="Btns1">
+                    <a href="/product/?productid= <%= inventory[1].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+            <div class="Col-container">
+                <div class="Picture" onclick="showPopup(this,2);"><img src="/Images/Pic2.jpg" alt="It is a ArmChair" /></div>
+                <div class="Info">
+                    <div id="Name2">Product Name:
+                        <%= inventory[2].product_name %>
+                    </div>
+                    <div id="Price2">Price:
+                        <%= inventory[2].price %>
+                    </div>
+                    <div id="Quantity2">Quantity:
+                        <%= inventory[2].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[2].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Row-container">
+            <div class="Col-container">
+                <div class="Picture Image-fit" onclick="showPopup(this,3);"><img src="/Images/Pic3.jpg" alt="It is a BookCase" /></div>
+                <div class="Info">
+                    <div id="Name3">Product Name:
+                        <%= inventory[3].product_name %>
+                    </div>
+                    <div id="Price3">Price::
+                        <%= inventory[3].price %>
+                    </div>
+                    <div id="Quantity3">Quantity:
+                        <%= inventory[3].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[3].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+            <div class="Col-container">
+                <div class="Picture" onclick="showPopup(this,4);"><img src="/Images/Pic4.jpg" alt="It is a FileCabinet" /></div>
+                <div class="Info">
+                    <div id="Name4">Product Name:
+                        <%= inventory[4].product_name %>
+                    </div>
+                    <div id="Price4">Price:
+                        <%= inventory[4].price %>
+                    </div>
+                    <div id="Quantity4">Quantity:
+                        <%= inventory[4].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[4].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+            <div class="Col-container">
+                <div class="Picture" onclick="showPopup(this,5);"><img src="/Images/Pic5.jpg" alt="It is a Chair" /></div>
+                <div class="Info">
+                    <div id="Name5">Product Name:
+                        <%= inventory[5].product_name %>
+                    </div>
+                    <div id="Price5">Price:
+                        <%= inventory[5].price %>
+                    </div>
+                    <div id="Quantity5">Quantity:
+                        <%= inventory[5].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[5].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Row-container">
+            <div class="Col-container">
+                <div class="Picture Image-fit" onclick="showPopup(this,6);"><img src="/Images/Pic6.jpg" alt="It is a ShoeRack" /></div>
+                <div class="Info">
+                    <div id="Name6">Product Name:
+                        <%= inventory[6].product_name %>
+                    </div>
+                    <div id="Price6">Price:
+                        <%= inventory[6].price %>
+                    </div>
+                    <div id="Quantity6">Quantity:
+                        <%= inventory[6].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[6].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+            <div class="Col-container">
+                <div class="Picture" onclick="showPopup(this,7);"><img src="/Images/Pic7.jpg" alt="It is a Sofa" /></div>
+                <div class="Info">
+                    <div id="Name7">Product Name:
+                        <%= inventory[7].product_name %>
+                    </div>
+                    <div id="Price7">Price:
+                        <%= inventory[7].price %>
+                    </div>
+                    <div id="Quantity7">Quantity:
+                        <%= inventory[7].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[7].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+            <div class="Col-container">
+                <div class="Picture" onclick="showPopup(this,8);"><img src="/Images/Pic8.jpg" alt="It is a BathTub" /></div>
+                <div class="Info">
+                    <div id="Name8">Product Name:
+                        <%= inventory[8].product_name %>
+                    </div>
+                    <div id="Price8">Price:
+                        <%= inventory[8].price %>
+                    </div>
+                    <div id="Quantity8">Quantity:
+                        <%= inventory[8].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[8].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Single-item">
+            <div class="Col-container" id="item">
+                <div class="Picture" onclick="showPopup(this,9);"><img src="/Images/Pic9.jpg" alt="It is a Throne" /></div>
+                <div class="Info">
+                    <div id="Name9">Product Name:
+                        <%= inventory[9].product_name %>
+                    </div>
+                    <div id="Price9">Price:
+                        <%= inventory[9].price %>
+                    </div>
+                    <div id="Quantity9">Quantity:
+                        <%= inventory[9].quantity %>
+                    </div>
+                </div>
+                <div class="Btns">
+                    <a href="/product/?productid= <%= inventory[9].product_key %>"><button type="button" class="Btn Order">ORDER NOW</button></a>
+                </div>
+
+                <div class="Stock">
+                    <p><b>Oops!! Sorry,out of stock.</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-li py-5" id="Footer">
+        <div class="container py-xl-5 py-lg-3">
+            <div class="row footer-grids">
+                <div class="col-lg-4 footer-grid mt-lg-3">
+                    <h2>
+                        <a class="logo-2" href="/"><img src="/Images/Logo_Laevo.png" class="Logo" /></a>
+                    </h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-grid mt-lg-3 mt-4">
+                    <h3 class="mb-sm-4 mb-3 pb-3">Home</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/">Index</a>
+                        </li>
+                        <li>
+                            <a href="/about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-grid footer-contact mt-lg-3 mt-4">
+                    <h3 class="mb-sm-4 mb-3 pb-3"> Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            +91 1800 419 4532
+                        </li>
+                        <li class="mt-2">
+                            <a href="mailto:feedback@laevo.com">feedback@laevo.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-grid-social mt-lg-3 mt-4">
+                    <h3 class="mb-sm-4 mb-3 pb-3">Catch on Social</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-inline">
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#"><span class="fa fa-google-plus"></span></a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copy_right text-center py-3 position-relative" id="Copy-right">
+        <p>© 2020 Laevo. All rights reserved | Design by Leavo
+        </p>
+        <!-- move top icon -->
+        <a href="#home" class="move-top text-center">
+            <span class="fa fa-level-up" aria-hidden="true"></span>
+        </a>
+        <!-- //move top icon -->
+    </div>
+    <!-- //copyright -->
+
+
+    <div id="Whole-container">
+        <div class="Popup-div" id="Popup">
+            <div id="Pic" class="Image"></div>
+            <div id="Info-container">
+                <div id="Detail">
+                    <h1>PRODUCT DETAILS</h1>
+                    <div id="PName"></div>
+                    <div id="PPrice"></div>
+                    <div id="PQuantity"></div>
+                </div>
+                <div id="Close-btn">
+                    <button type="button" class="Clbtn" onclick="closePopup();">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
