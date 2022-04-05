@@ -1,9 +1,12 @@
 var mysql = require('mysql')
+const dotenv = require('dotenv')
+
+dotenv.config({path:'./config.env'})
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'arash',
-    password: 'Taunuetrino-1',
-    database: 'dbms_minipro'
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME
 })
 connection.connect(function(err) {
     if (!err) {
